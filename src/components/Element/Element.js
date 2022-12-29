@@ -1,6 +1,6 @@
 import React from 'react';
 import './Element.css'
-const Element = ({ element }) => {
+const Element = ({ element, handleAddToCart }) => {
     const { name, img, age, description, time } = element;
     return (
         <div className='element'>
@@ -9,7 +9,7 @@ const Element = ({ element }) => {
             <p>{description}</p>
             <p>{time}</p>
             <p> {age}</p>
-            <button className='btn-cart'>add to list</button>
+            <button onClick={() => handleAddToCart(element)} className='btn-cart'>add to list</button>
 
         </div>
     );
