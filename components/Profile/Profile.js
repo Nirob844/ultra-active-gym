@@ -30,8 +30,8 @@ const Profile = () => {
             </div>
             <div className='int-fld'>
                 <h2>Exercise Details</h2>
-                <input type="text" />
-                <input type="text" />
+                <input type="text" placeholder='Exercise time' />
+                <input type="text" placeholder='Break time' />
             </div>
             <button className='btn-com'>Activity Completed</button>
         </div>

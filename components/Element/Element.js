@@ -7,7 +7,7 @@ const Element = ({ element, handleAddToCart }) => {
             <img src={img} alt="" />
             <h2>{name}</h2>
             <p>{description}</p>
-            <p>{time}</p>
+            <p>Time required : {time}</p>
             <p> {age}</p>
             <button onClick={() => handleAddToCart(element)} className='btn-cart'>add to list</button>
 
