@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Profile.css';
+import nirob from '../../image/nirob.jpeg'
 
 const Profile = ({ cart }) => {
     const [time, setTime] = useState([]);
@@ -20,7 +21,7 @@ const Profile = ({ cart }) => {
     return (
         <div className='profile'>
             <div className='profile-name'>
-                <img src="../../image/WhatsApp Image 2022-12-08 at 2.10.28 PM.jpeg" alt="" />
+                <img src={nirob} alt="" />
                 <h1>Nirob Hasan</h1>
             </div>
             <div className="profile-info">
@@ -58,6 +59,7 @@ const Profile = ({ cart }) => {
                 </div>
             </div>
             <button className='btn-com'>Activity Completed</button>
+
         </div>
     );
 };
